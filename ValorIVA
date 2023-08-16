@@ -16,6 +16,7 @@ if(sueldo>2*sueldobase){valoriva=sueldo*iva;
     
 }else{
     valoriva=0;
+return 0;
     
 }
 }
