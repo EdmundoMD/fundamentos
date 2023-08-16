@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+float sueldo;
+float valoriva;
+float iva=.13;
+int sueldobase=2362;
+
+cout<<"Ingrese el sueldo del empleado: ";
+cin>>sueldo;
+if(sueldo>2*sueldobase){valoriva=sueldo*iva;
+    cout<<"EL VALOR DEL IMPUESTO IVA ES: "<<valoriva;
+    
+}else{
+    valoriva=0;
+    
+}
+}
