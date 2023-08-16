@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+float valor1, valor2,total;
+cout<<"Ingrese el primer valor";
+cin>>valor1;
+cout<<"Ingrese el segundo valor";
+cin>>valor2;
+total=valor1+valor2;
+cout<<"La suma es: "<<total;
+return 0;
+}
