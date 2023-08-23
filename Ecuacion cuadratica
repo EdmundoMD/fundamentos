@@ -1,0 +1,41 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    double a, b, c, x1, x2, D, xR, xi, x;
+    cout<<"Resolver la ecuacion de forma: ax2+by+c=0"<<endl;
+    cout<<"A travez de la ecuacion cuadratica: (-b±√(b²-4ac))/(2a)"<<endl;
+    cout<<"Ingresar valor de a: ";
+    cin>>a;
+    if(a==0){
+        cout<<"no tiene solucion"<<endl;
+    }
+    else {
+        cout<<"Ingresar el valor de b: ";
+        cin>>b;
+        cout<<"Ingresar el valor de c: ";
+        cin>>c;
+        D=(b*b)-4*a*c;
+    }    
+    
+    if(D<0){
+        xR= -b/(2*a);
+        xi=sqrt(-D)/(2*a);
+        cout<<"Solucion imaginaria 1 es: "<<xR<<"+"<<xi<<"i"<<endl;
+        cout<<"Solucion imaginaria 2 es: "<<xR<<"-"<<xi<<"i"<<endl;
+    }
+    else if (D==0){
+        x=-b/(2*a);
+        cout<<"La solucion unica es: "<<x;
+    }
+    else{ 
+        x1=((-b+sqrt((b*b)-4*a*c))/(2*a));
+        x2=((-b-sqrt((b*b)-4*a*c))/(2*a));
+        cout<<"Los valores de x son: "<<endl;
+        cout<<"x1: "<<x1<<endl;
+        cout<<"x2: "<<x2<<endl;
+    }
+
+    return 0;
+}
