@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float A,B,AUX;
+    cout<<"Ingrese el primer entero: ";
+    cin>>A;
+    cout<<"Ingrese el segundo entero: ";
+    cin>>B;
+    AUX=A;
+    A=B;
+    B=AUX;
+    cout<<"El primer entero es: "<<A<<endl;
+    cout<<"El segundo entero es: "<<B<<endl;
+    
+    return 0;
+}
