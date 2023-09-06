@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float H,HQ,PF,S,cantidad,totalparcial,R,menu;
+    int opcion;
+    totalparcial=R;
+    H=3.0;
+    HQ=5.0;
+    PF=2.0;
+    S=2.5;
+    cout<<"MENU"<<endl;
+    cout<<"1.-Hamburguesa (3 bs)"<<endl;
+    cout<<"2.-Hamburguesa de queso(5 bs)"<<endl;
+    cout<<"3.-Papas fritas(2 bs)"<<endl;
+    cout<<"4.-Soda(2.5bs)"<<endl;
+    cout<<"Elegir el menu deseado:"<<endl;
+    cin>>opcion;
+     cout<<"Colocar la cantidad deseada:"<<endl;
+     cin>>cantidad;
+    if(opcion==1){
+            R=cantidad*H;
+            }else{
+                if(opcion==2){
+                    R=cantidad*HQ;
+                    }else{
+                        if(opcion==3){
+                            R=cantidad*PF;
+                            }else{
+                            if(opcion==4){
+                                R=cantidad*S;
+                                }else{
+                                     cout<<"Opcion invalida"<<endl;
+                }
+            }
+       } 
+  }
+   cout<<"El total a pagar es:"<<R;cout<<"bs"<<endl;
+   return 0;
+}
