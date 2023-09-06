@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+// promedio siempre es igual a promedio 
+int main()
+{
+    int mayor,menor,n,c,entero,prom;
+    prom=0;
+    c=1;
+    cout<<"Ingrese la cantidad de numeros: "<<endl;
+    cin>>n;
+    mayor=-99;
+    menor=0;
+    while(n>=c)
+    {
+        cout<<"Ingrese el entero: "<<endl;
+        cin>>entero;
+        if(mayor<n)
+        if(menor>n)
+        c=c+1;
+        prom=prom+n;
+    }
+        cout<<"El promedio total es: "<<prom/n<<endl;
+        cout<<"El mayor es: "<<mayor<<endl;
+        cout<<"El menor es: "<<menor<<endl;
+    return 0;
+}
