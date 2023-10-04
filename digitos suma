@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int sumar_digitos(int n);
+
+int main() {
+  int numero;
+  cout << "Ingrese un número entero: ";
+  cin >> numero;
+
+  // Llamada al subprograma
+  int suma = sumar_digitos(numero);
+
+  // Impresión del resultado
+  cout << "La suma de los dígitos de " << numero << " es " << suma << endl;
+
+  return 0;
+}
+
+int sumar_digitos(int numero) {
+  int suma = 0;
+  while (numero > 0) {
+    suma += numero % 10;
+    numero /= 10;
+  }
+  return suma;
+}
