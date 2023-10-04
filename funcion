@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+double calcular_factorial(int x); //prototipo de la función
+
+int main()
+{ 
+    
+   int num;
+   cout<<"¿Qué numero de factorial deseas ver? ";
+   cin>>num;
+ 
+    cout<<num<<"!="<<calcular_factorial(num);
+    return 0;
+}
+
+double calcular_factorial (int n) //definicion de la funcion
+{
+   int producto=1;
+   
+   for (int i=1; i<=n; i++)
+   { producto=producto*i;
+   }
+   return producto;
+}
