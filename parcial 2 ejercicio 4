@@ -1,0 +1,35 @@
+// EJERCICIO 4 - EDMUNDO MOLINA DAVALOS 
+
+#include <iostream>
+using namespace std;
+float perimetro(float radio);
+float area(float  radio);
+float volumen( float  radio);
+float pi = 3.1416;
+int main()
+{
+	float radio;
+
+	cout << "Ingrese el radio: ";
+	cin >> radio;
+
+	cout << "El perimetro es: " << perimetro(radio) << endl;
+	cout << "El area es:" << area(radio) << endl;
+	cout << "El volumen es: " << volumen(radio) << endl;
+}
+
+float perimetro(float radio) {
+	float perimetrototal;
+	perimetrototal= 2 * radio * pi;
+	return perimetrototal;
+}
+float area(float radio) {
+	float areatotal;
+	areatotal= pi * (radio * radio);
+	return areatotal;
+}
+float volumen(float radio) {
+	float volumentotal;
+	volumentotal= (4 * pi * radio * radio * radio) / 3;
+	return volumentotal;
+}
