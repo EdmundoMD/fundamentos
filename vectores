@@ -1,0 +1,74 @@
+[12:39, 01/11/2023] Alexiaaaaaaaa: #include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string cadena;
+    cout<<"Ingresar cadena de oracion: ";
+    getline(cin, cadena);
+
+   
+    for (int i = 0; i < cadena.length(); i++) {
+        if (i == 0 || cadena[i - 1] == ' ') {
+            cadena[i] = toupper(cadena[i]);
+        }
+    }
+
+    cout << cadena << endl;
+
+    return 0;
+}
+[12:44, 01/11/2023] Alexiaaaaaaaa: #include <iostream>
+#define MAX 100
+
+using namespace std;
+
+void cargar (double a[], int tamano); 
+void mostrar (double a[], int tamano);
+double reverseSequence(double sequence[], int size);
+
+int main()
+{
+    int n;
+    double vec [MAX];
+    
+    // Validar la entrada
+    do {
+        cout<<"Ingresar el numero de elementos: ";
+        cin>>n;
+    } while ((n<0) || (n>MAX));
+    cargar (vec, n);
+    cout<<"El vector invertido es: ";
+    reverseSequence(vec,n);
+    mostrar (vec, n);
+
+    return 0;
+}
+
+void cargar (double a[], int tamano)
+{
+    //Pide los elementos del vector o arreglo
+    for (int i=0; i<tamano; i++)
+    {
+        cout<<"Ingresa el elemento "<<i<<" : ";
+        cin>>a[i];
+    }
+}
+
+void mostrar (double a[], int tamano)
+{
+    for (int i=0; i<tamano; i++)
+    cout<<a[i]<<endl;
+}
+
+double reverseSequence(double sequence[], int size) 
+{
+    int temp=0;
+    for (int i = 0; i < size / 2; i++) {
+        int temp = sequence[i];
+        sequence[i] = sequence[size - 1 - i];
+        sequence[size - 1 - i] = temp;
+    }
+    return temp;
+}
